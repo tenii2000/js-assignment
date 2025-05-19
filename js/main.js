@@ -14,9 +14,8 @@ var btn=document.getElementById("btn");
 var quote=document.getElementById("quote");
 var writer=document.getElementById("writer");
 btn.addEventListener("click",function(){
-    var random;
     do {
-        random =Math.floor(Math.random() * quotes.length);
+      var random =Math.floor(Math.random() * quotes.length);
     } while (random===prevIndex);
     
     quote.innerHTML=quotes[random].quote;
